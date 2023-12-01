@@ -6,22 +6,37 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les `structures` de base du langage ❌ / ✔️
+- les `structures` de base du langage  ✔️
 - les normes `ecmascript` ❌ / ✔️
-- l'utilisation de l'`asynchrone` ❌ / ✔️
+- l'utilisation de l'`asynchrone`  ✔️
 - les spécifités du mot-clef `this` ❌ / ✔️
 
 ## 💻 Je code en Javascript
 
-### Un exemple de code commenté ❌ / ✔️
+### Un exemple de code commenté ✔️
 
 ```javascript
-(e) => mc2;
+// State permettant d'initialiser l'état et l'écoute de l'état de l'entité Tags qui est un tableau de tag
+  const [selectedTags, setSelectedTags] = useState<number[]>([]);
+
+// Code permettant de cocher ou de décocher des tags selon une série de conditions
+  const tagChange = (tagId: number) => {
+    // Mise à jour de l'état des tags sélectionnés
+    setSelectedTags((prevSelectedTags) => {
+      if (prevSelectedTags.includes(tagId)) {
+        // Si le tag est déjà sélectionné, le retirer
+        return prevSelectedTags.filter((id) => id !== tagId);
+      } else {
+        // Sinon, l'ajouter à la liste des tags sélectionnés
+        return [...prevSelectedTags, tagId];
+      }
+    });
+  };
 ```
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[https://github.com/LaureJanin/the-good-corner]
 
 Description :
 
