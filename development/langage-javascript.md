@@ -46,7 +46,7 @@ Exemple d'une petite fonction asynchrone :
     });
   }
 ```
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
 [https://github.com/LaureJanin/the-good-corner]
 
