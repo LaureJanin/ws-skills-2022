@@ -33,7 +33,19 @@
     });
   };
 ```
-
+Exemple d'une petite fonction asynchrone :
+```
+// Enregistrement d'un nouveau tag via un formulaire
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+    const result = await createTag({
+      variables: {
+        data: {
+          name: newTag,
+        },
+      },
+    });
+  }
+```
 ### Utilisation dans un projet ❌ / ✔️
 
 [https://github.com/LaureJanin/the-good-corner]
